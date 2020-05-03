@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/attempt_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/attempt/attempt_{{ version }}.tar.gz
-  sha256: e1ec580428e247fe6b3611abee8c7227febeeac4b960b6759f82e708412619e0
+  sha256: 15159d3d20198c6300874451e925ca154c23e0b6cdd7e05eaf98a3cbe4798ffa
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-rlang
@@ -38,11 +38,8 @@ test:
 about:
   home: https://github.com/ColinFay/attempt
   license: MIT
-  summary: 'Tools for defensive programming, inspired by ''purrr'' mappers and  based on ''rlang''.''attempt''
-    extends and facilitates defensive programming by  providing a consistent grammar,
-    and provides a set of easy to use functions  for common tests and conditions. ''attempt''
-    only depends on ''rlang'', and  focuses on speed, so it can be easily integrated
-    in other functions and  used in data analysis. '
+  summary: "Tools for defensive programming, inspired by 'purrr' mappers and  based on 'rlang'.'attempt' extends and facilitates defensive programming by  providing a consistent grammar, and provides a set of easy to use functions  for common tests and conditions. 'attempt' only depends on 'rlang', and  focuses on speed,\
+    \ so it can be easily integrated in other functions and  used in data analysis. "
   license_family: MIT
   license_file: LICENSE
 
