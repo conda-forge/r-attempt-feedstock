@@ -1,11 +1,11 @@
-About r-attempt
-===============
+About r-attempt-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-attempt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ColinFay/attempt
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-attempt-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for defensive programming, inspired by 'purrr' mappers and  based on 'rlang'.'attempt' extends and facilitates defensive programming by  providing a consistent grammar, and provides a set of easy to use functions  for common tests and conditions. 'attempt' only depends on 'rlang', and  focuses on speed, so it can be easily integrated in other functions and  used in data analysis. 
 
